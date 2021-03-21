@@ -2282,19 +2282,16 @@ var PanelFooter = function (_a) {
                 React__default['default'].createElement(Icon$l, null))));
     }
     return (React__default['default'].createElement(Container$4, null,
-        "*",
         tokenAltPriceUsd ?
             React__default['default'].createElement(SocialEntry, null,
                 React__default['default'].createElement(PriceLink, { href: tokenAltpriceLink, target: "_blank" },
                     React__default['default'].createElement(Icon$w, { width: "24px", mr: "8px" }),
                     React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + tokenAltPriceUsd.toFixed(4))))
-            : '*',
-        React__default['default'].createElement(SocialEntry, null,
-            "**",
-            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4),
-                    "*"))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+            :
+                React__default['default'].createElement(Skeleton, { width: 80, height: 24 }),
+        React__default['default'].createElement(SocialEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+            React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
+            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SettingsEntry, null,
             React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React__default['default'].createElement(Flex, { alignItems: "center" },

@@ -77,7 +77,7 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      *
+      
     {tokenAltPriceUsd?
       <SocialEntry>
         <PriceLink href={tokenAltpriceLink} target="_blank">
@@ -85,10 +85,11 @@ const PanelFooter: React.FC<Props> = ({
           <Text color="textSubtle" bold>{`$${tokenAltPriceUsd.toFixed(4)}`}</Text>
           </PriceLink>
         </SocialEntry>
-        : '*'
+        : 
+        <Skeleton width={80} height={24} />
       }
       <SocialEntry>
-      **
+      
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />

@@ -14,6 +14,7 @@ import Avatar from "./Avatar";
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
+  padding:30px;
 `;
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
@@ -37,6 +38,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
 const BodyWrapper = styled.div`
   position: relative;
   display: flex;
+
 `;
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
@@ -72,6 +74,8 @@ const Menu: React.FC<NavProps> = ({
   priceLink,
   profile,
   children,
+  tokenAltPriceUsd,
+  tokenAltpriceLink,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -139,6 +143,8 @@ const Menu: React.FC<NavProps> = ({
           pushNav={setIsPushed}
           links={links}
           priceLink={priceLink}
+          tokenAltPriceUsd={tokenAltPriceUsd}
+          tokenAltpriceLink={tokenAltpriceLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

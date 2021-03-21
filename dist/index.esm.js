@@ -2269,16 +2269,19 @@ var PanelFooter = function (_a) {
                 React.createElement(Icon$l, null))));
     }
     return (React.createElement(Container$4, null,
+        "*",
         tokenAltPriceUsd ?
             React.createElement(SocialEntry, null,
                 React.createElement(PriceLink, { href: tokenAltpriceLink, target: "_blank" },
                     React.createElement(Icon$w, { width: "24px", mr: "8px" }),
                     React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tokenAltPriceUsd.toFixed(4))))
-            : null,
-        React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React.createElement(Icon$v, { width: "24px", mr: "8px" }),
-            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4),
-                "*"))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
+            : '*',
+        React.createElement(SocialEntry, null,
+            "**",
+            cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
+                React.createElement(Icon$v, { width: "24px", mr: "8px" }),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4),
+                    "*"))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
         React.createElement(SettingsEntry, null,
             React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React.createElement(Flex, { alignItems: "center" },

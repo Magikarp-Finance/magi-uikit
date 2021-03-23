@@ -1,4 +1,4 @@
-import { Login } from "../WalletModal/types";
+import { Login } from '../WalletModal/types';
 export interface LangType {
     code: string;
     language: string;
@@ -21,6 +21,7 @@ export interface NavTheme {
 export interface MenuSubEntry {
     label: string;
     href: string;
+    external?: boolean;
     calloutClass?: string;
 }
 export interface MenuEntry {
@@ -29,6 +30,7 @@ export interface MenuEntry {
     items?: MenuSubEntry[];
     href?: string;
     calloutClass?: string;
+    external?: boolean;
     initialOpenState?: boolean;
 }
 export interface PanelProps {

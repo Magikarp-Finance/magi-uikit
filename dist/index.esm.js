@@ -2272,44 +2272,40 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon;
-var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
+var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n\tflex: none;\n\tpadding: 8px 4px;\n\tbackground-color: ", ";\n\tborder-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n\tflex: none;\n\tpadding: 8px 4px;\n\tbackground-color: ", ";\n\tborder-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
-var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var SettingsEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
-var SocialEntry = styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tsvg {\n\t\ttransition: transform 0.3s;\n\t}\n\t:hover {\n\t\tsvg {\n\t\t\ttransform: scale(1.2);\n\t\t}\n\t}\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tsvg {\n\t\ttransition: transform 0.3s;\n\t}\n\t:hover {\n\t\tsvg {\n\t\t\ttransform: scale(1.2);\n\t\t}\n\t}\n"])));
+var SettingsEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\theight: ", "px;\n\tpadding: 0 8px;\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\theight: ", "px;\n\tpadding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\theight: ", "px;\n\tpadding: 0 16px;\n"], ["\n\tdisplay: flex;\n\talign-items: center;\n\tjustify-content: space-between;\n\theight: ", "px;\n\tpadding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, tokenAltPriceUsd = _a.tokenAltPriceUsd, priceLink = _a.priceLink, tokenAltpriceLink = _a.tokenAltpriceLink;
     if (!isPushed) {
         return (React.createElement(Container$4, null,
-            React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
+            React.createElement(IconButton, { variant: 'text', onClick: function () { return pushNav(true); } },
                 React.createElement(Icon$l, null))));
     }
     return (React.createElement(Container$4, null,
-        tokenAltPriceUsd ?
-            React.createElement(SocialEntry, null,
-                React.createElement(PriceLink, { href: tokenAltpriceLink, target: "_blank" },
-                    React.createElement(Icon$w, { width: "24px", mr: "8px" }),
-                    React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tokenAltPriceUsd.toFixed(4))))
-            :
-                React.createElement(Skeleton, { width: 80, height: 24 }),
-        React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-            React.createElement(Icon$v, { width: "24px", mr: "8px" }),
-            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4),
-                "*"))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
+        tokenAltPriceUsd ? (React.createElement(SocialEntry, null,
+            React.createElement(PriceLink, { href: tokenAltpriceLink, target: '_blank' },
+                React.createElement(Icon$w, { width: '24px', mr: '8px' }),
+                React.createElement(Text, { color: 'textSubtle', bold: true }, "$" + tokenAltPriceUsd.toFixed(4))))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
+        React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: '_blank' },
+            React.createElement(Icon$v, { width: '24px', mr: '8px' }),
+            React.createElement(Text, { color: 'textSubtle', bold: true }, "$" + cakePriceUsd.toFixed(4)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
         React.createElement(SettingsEntry, null,
-            React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
-                React.createElement(Flex, { alignItems: "center" },
-                    React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
-                    React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
+            React.createElement(Button, { variant: 'text', onClick: function () { return toggleTheme(!isDark); } },
+                React.createElement(Flex, { alignItems: 'center' },
+                    React.createElement(SunIcon, { color: isDark ? 'textDisabled' : 'text', width: '24px' }),
+                    React.createElement(Text, { color: 'textDisabled', mx: '4px' }, "/"),
+                    React.createElement(MoonIcon, { color: isDark ? 'text' : 'textDisabled', width: '24px' }))),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
-                var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-                var mr = index < socials.length - 1 ? "24px" : 0;
+                var iconProps = { width: '24px', color: 'textSubtle', style: { cursor: 'pointer' } };
+                var mr = index < socials.length - 1 ? '24px' : 0;
                 if (social.items) {
-                    return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+                    return (React.createElement(Dropdown, { key: social.label, position: 'top', target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: 'textSubtle' }, item.label)); })));
                 }
                 return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React.createElement(Icon, __assign({}, iconProps))));

@@ -29,6 +29,7 @@ export { default as LogoRoundIcon } from "./Icons/LogoRound";
 export { default as MinusIcon } from "./Icons/Minus";
 export { default as OpenNewIcon } from "./Icons/OpenNew";
 export { default as PancakesIcon } from "./Icons/Pancakes";
+export { default as MagiRoundIcon } from "./Icons/PancakeRound";
 export { default as PancakeRoundIcon } from "./Icons/PancakeRound";
 export { default as AltTokenRoundIcon } from "./Icons/AltTokenRound";
 export { default as GooseRoundIcon } from "./Icons/GooseRound";

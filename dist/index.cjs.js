@@ -2967,6 +2967,7 @@ exports.LinkExternal = LinkExternal;
 exports.ListViewIcon = Icon$p;
 exports.LogoIcon = Icon$q;
 exports.LogoRoundIcon = Icon$r;
+exports.MagiRoundIcon = Icon$v;
 exports.Menu = Menu;
 exports.MinusIcon = Icon$s;
 exports.Modal = Modal;

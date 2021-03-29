@@ -68,7 +68,7 @@ const Toast: React.FC<ToastProps> = ({ toast, onRemove, style, ttl, ...props }) 
           {action ? (
             <>
               <Text as="p" mb="8px">
-                {description}
+                {description}+delete
               </Text>
               <ToastAction action={action} />
             </>

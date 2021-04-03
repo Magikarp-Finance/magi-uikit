@@ -23,3 +23,4 @@ export { default as RoadmapIcon } from './Roadmap';
 export { default as MagiIcon } from './MagiIcon';
 export { default as GyaIcon } from './GyaIcon';
 export { default as ShrineIcon } from './ShrineIcon';
+export { default as PartnerIcon } from './Partnership';
